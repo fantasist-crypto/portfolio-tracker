@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 
 import '@/styles/globals.css'
+import { Toaster } from '@/components/ui/toaster'
 import { Brand } from '@/components/brand'
 import { Header } from '@/components/header'
 import { Sidebar } from '@/components/sidebar'
@@ -21,6 +22,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             </div>
             <main className="py-6 lg:py-10">{children}</main>
           </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

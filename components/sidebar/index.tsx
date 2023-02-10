@@ -2,6 +2,9 @@ import { HTMLAttributes } from 'react'
 import Link from 'next/link'
 import { ArrowLeftRight, Home, LayoutDashboard, Send, Star } from 'lucide-react'
 
+import { BridgeIcon } from '@/components/icons/bridge'
+import { SeedingIcon } from '@/components/icons/seeding'
+
 import { NavItem } from './nav-item'
 
 export interface SidebarProps extends HTMLAttributes<HTMLElement> {}
@@ -41,12 +44,6 @@ export function Sidebar({ ...props }: SidebarProps) {
         </li>
 
         <li>
-          <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-semibold">
-            Tools
-          </h4>
-        </li>
-
-        <li>
           <NavItem
             title="Send"
             href="/send"
@@ -60,6 +57,24 @@ export function Sidebar({ ...props }: SidebarProps) {
             title="Swap"
             href="/swap"
             icon={<ArrowLeftRight className="h-5 w-5" />}
+            disabled
+          />
+        </li>
+
+        <li>
+          <NavItem
+            title="Bridge"
+            href="/bridge"
+            icon={<BridgeIcon className="h-5 w-5" />}
+            disabled
+          />
+        </li>
+
+        <li>
+          <NavItem
+            title="Stake"
+            href="/stake"
+            icon={<SeedingIcon className="h-5 w-5" />}
             disabled
           />
         </li>
