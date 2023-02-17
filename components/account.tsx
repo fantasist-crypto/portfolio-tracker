@@ -98,7 +98,7 @@ export function Account() {
               href="/connect"
               className={cn(
                 buttonVariants({
-                  className: 'w-full justify-start cursor-pointer',
+                  className: 'w-full cursor-pointer justify-start',
                   variant: 'ghost',
                   size: 'sm',
                 }),
@@ -113,7 +113,7 @@ export function Account() {
               href="/wallets"
               className={cn(
                 buttonVariants({
-                  className: 'w-full justify-start cursor-pointer',
+                  className: 'w-full cursor-pointer justify-start',
                   variant: 'ghost',
                   size: 'sm',
                 }),
